@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.DS_Store
+
+# Secrets — never commit
+.env
+.streamlit/secrets.toml
+
+# Runtime artifacts (local, per-user)
+data/journal.db
+data/snapshots/
+data/oi_cache/
+data/refresh.log

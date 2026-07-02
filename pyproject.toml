@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swingdesk"
+version = "0.2.0"
+description = "Local, read-only swing-trade decision-support desk — GEX funnel + risk-based sizing."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["trading", "options", "gamma-exposure", "gex", "streamlit", "decision-support"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Intended Audience :: End Users/Desktop",
+]
+# Human-readable direct deps. Exact tested versions are pinned in requirements.lock.
+dependencies = [
+    "yfinance>=0.2.40",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "plotly>=5.18",
+    "streamlit>=1.30",
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+swingdesk-refresh = "swingdesk.cli:refresh_main"
+
+[tool.setuptools]
+packages = ["swingdesk", "swingdesk.providers"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

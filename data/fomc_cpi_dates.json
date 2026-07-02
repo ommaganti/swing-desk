@@ -1,0 +1,28 @@
+{
+  "_comment": "MAINTAINED LOCAL LIST. FOMC = decision day (2nd day of meeting). CPI = BLS release day (~08:30 ET, prior-month data). Dates are best-effort and should be verified/updated against federalreserve.gov and bls.gov schedules. The tool degrades gracefully if this file is missing or stale.",
+  "updated": "2026-06-29",
+  "events": [
+    {"date": "2026-01-28", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-03-18", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-04-29", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-06-17", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-07-29", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-09-16", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-10-28", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-12-09", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2026-01-13", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-02-11", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-03-11", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-04-10", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-05-13", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-06-10", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-07-15", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-08-12", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-09-11", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-10-14", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-11-13", "label": "CPI release", "kind": "cpi"},
+    {"date": "2026-12-10", "label": "CPI release", "kind": "cpi"},
+    {"date": "2027-01-27", "label": "FOMC decision", "kind": "fomc"},
+    {"date": "2027-01-13", "label": "CPI release", "kind": "cpi"}
+  ]
+}

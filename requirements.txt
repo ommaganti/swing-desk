@@ -1,0 +1,12 @@
+# Core (zero-key baseline works with just these)
+yfinance>=0.2.40
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+plotly>=5.18
+streamlit>=1.30
+python-dotenv>=1.0
+requests>=2.31
+
+# Tests
+pytest>=7.4

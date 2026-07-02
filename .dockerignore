@@ -1,0 +1,17 @@
+# Never copy secrets or local runtime state into the image.
+.env
+.venv/
+venv/
+.git/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.streamlit/secrets.toml
+
+# Local, per-user runtime artifacts (recreated at runtime; persisted via volume).
+data/journal.db
+data/snapshots/
+data/oi_cache/
+data/refresh.log
