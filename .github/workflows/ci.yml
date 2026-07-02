@@ -1,0 +1,31 @@
+name: CI
+
+# Run the (network-free) test suite on every push and pull request.
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.lock
+
+      - name: Install (pinned deps + package)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock
+          pip install -e . --no-deps
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Zero-key smoke test (offline checks)
+        run: python smoke_test.py

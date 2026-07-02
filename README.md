@@ -1,5 +1,8 @@
 # Swing-Trade Decision-Support Desk
 
+<!-- After pushing to GitHub, replace <OWNER>/<REPO> below and the badge goes live. -->
+[![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml)
+
 A **local, read-only** decision-support tool for swing trading a small (**$2,000**) account. It pulls market data each morning, runs each candidate ticker through a strict two-phase funnel, and presents the result as a dark, card-based Streamlit **cockpit** (Morning · Analyze · Positions · Journal) with a sizing-ready trade plan.
 
 **Daily by default:** a `refresh.py` job (auto-run each weekday morning via launchd) snapshots the whole watchlist and re-reads every open position; the dashboard loads that snapshot and stamps an honest *"as of"* time. **Risk profile:** 10% of equity per trade ($200), with scaled caps — see *Risk profile* below.
