@@ -1,7 +1,6 @@
 # Swing-Trade Decision-Support Desk
 
-<!-- After pushing to GitHub, replace <OWNER>/<REPO> below and the badge goes live. -->
-[![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml)
+[![CI](https://github.com/ommaganti/swing-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/ommaganti/swing-desk/actions/workflows/ci.yml)
 
 A **local, read-only** decision-support tool for swing trading a small (**$2,000**) account. It pulls market data each morning, runs each candidate ticker through a strict two-phase funnel, and presents the result as a dark, card-based Streamlit **cockpit** (Morning · Analyze · Positions · Journal) with a sizing-ready trade plan.
 
